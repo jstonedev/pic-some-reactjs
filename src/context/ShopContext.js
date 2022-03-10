@@ -4,7 +4,6 @@ const ShopContext = React.createContext();
 function ShopContextProvider({ children }) {
 	const [allPhotos, setAllPhotos] = useState([]);
 	const [cartItems, setCartItems] = useState([]);
-	const [orderMessage, setOrderMessage] = useState("");
 
 	const toggleFavorite = (id) => {
 		const updatedArr = allPhotos.map((photo) => {
